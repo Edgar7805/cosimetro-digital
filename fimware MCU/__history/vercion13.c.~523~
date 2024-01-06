@@ -1,0 +1,265 @@
+#include <18f4550.h>
+#fuses PLL1,CPUDIV3,HSPLL,PUT,NOLVP,NOPROTECT,NODEBUG,NOWDT,NOLPT1OSC,USBDIV
+#device adc=10
+#use delay(clock=32MHz)
+#define compensar 0.70
+#define USB_CON_SENSE PIN_D0
+#include <usb_cdc.h>
+#PRIORITY INT_EXT1,INT_EXT  //interrupcion con prioridad
+//
+#include <math.h>
+                                  
+#define LCD_RS_PIN      PIN_D1                                   
+#define LCD_RW_PIN      PIN_D2
+#define LCD_ENABLE_PIN  PIN_D3  
+#define LCD_DATA4       PIN_D4                                   
+#define LCD_DATA5       PIN_D5                                  
+#define LCD_DATA6       PIN_D6                                
+#define LCD_DATA7       PIN_D7 
+#include <lcd.c>
+
+#define tau 6.28318     //valor de 2pi
+#define REINICIA_TIMER 0
+#define freq 50.0   //frecucnia de de red
+float t1=0;   //valore del timer obtenidos por la interrupcion 
+int1 cambio= 0;   //flag que indica que se ah reiniciado el timer
+float  cos_fi =0 ;
+float indice=0;//sgun el indice elije un valor dentro del stich case
+float voltaje_rms=0;
+//
+float corriente();
+int get_indice(float t1);
+float roundDecimal(float num);
+float corriente_rms =0;
+void valores(void);  //contine el switch case con los valores calculador de cos_fi
+float voltaje();
+#include <fusy.h>
+//funciones de interrupcion
+#INT_EXT
+void RB0_ISR(){   //señal corriente
+   set_timer1(0);
+   
+}
+
+#INT_ext1
+void RB1_ISR(){  //señal voltaje;
+     
+      t1 = ((float)get_timer1()/7776.6);
+      
+}
+
+
+
+void main(){
+    
+    //config gpios
+    set_tris_b(0b00000011);
+    
+    output_low(pin_b2);
+    output_low(pin_b3);
+    output_low(pin_b4);
+    output_low(pin_b5);
+    //iniciar lcd 
+   lcd_init();
+   usb_cdc_init();
+    setup_timer_1(T1_INTERNAL|T1_DIV_BY_8 );  //desborde del timer 64ms  los valores equivalen a micro segundo
+    //congigurar interrupcioes
+    setup_adc(ADC_CLOCK_INTERNAL);
+    setUP_adc_ports(AN0_TO_AN1);
+    set_adc_channel(0);
+    ext_int_edge(INT_EXT | H_TO_L);
+    ext_int_edge(INT_EXT1 | H_TO_L);
+    enable_interrupts(INT_EXT);
+    enable_interrupts(INT_EXT1);
+    enable_interrupts(GLOBAL);
+    lcd_gotoxy(1,1);
+   lcd_putc("iniciando...");
+   delay_ms(1000);
+   lcd_putc("\f");
+       
+   while(true){
+             usb_task();
+            
+            if(usb_enumerated()){
+             
+              //indice=get_indice(t1);
+              valores();
+              lcd_gotoxy(1,1);
+              //printf(lcd_putc,"pf=%.2f\  t=%f.3\n   ",cos_fi,t1);
+              delay_ms(250);
+              printf(lcd_putc,"datosdodatos%d\n");
+              delay_ms(250);
+              //lcd_gotoxy(1,2);
+              ///printf(lcd_putc,"A=%.2f",corriente_rms );
+              ///difuso();
+          }
+            }
+            
+   
+}
+
+
+int get_indice(float t1){
+ 
+     int indice=0;
+     indice= roundDecimal(t1*2);
+     
+     
+     
+     
+     
+     return indice;  //retorna el factor de potencia descrito en el arreglo
+}
+
+
+float roundDecimal(float num) {
+    int entero = (int)num;
+    float decimal = num - entero;
+
+    // Redondear al entero más cercano
+    if (decimal < 0.2) {
+        return (float)entero;
+    } else {
+        return (float)(entero + 1);
+    }
+}
+
+
+
+void valores(){
+
+    switch((int)indice) {
+        case 1:
+            cos_fi=1.0;
+            break;
+        case 2:
+            cos_fi=0.98;
+            break;
+        case 3:
+            cos_fi=0.95;
+            break;
+        case 4:
+           cos_fi=0.89;
+            break;
+        case 5:
+            cos_fi=0.80;
+            break;
+        case 6:
+            cos_fi=0.70;
+            break;
+        case 7:
+            cos_fi=0.58;
+            break;
+        case 8:
+            cos_fi=0.45;
+            break;
+        case 9:
+            cos_fi=0.30;
+            break;
+        case 10:
+            cos_fi=0.15;
+            break;
+        case 11:
+             cos_fi=0.0;
+             break;
+        case 12:
+            cos_fi=-0.15;
+            break;
+        case 13:
+           cos_fi=-0.30;
+            break;
+        case 14:
+            cos_fi=-0.45;
+            break;
+        case 15:
+            cos_fi=-0.58;
+            break;
+        case 16:
+            cos_fi=-0.70;
+            break;
+            
+        case 17:
+            cos_fi=-0.80;
+            break;
+        case 18:
+            cos_fi=-0.89;
+            break;
+        case 19:
+            cos_fi=-0.95;
+            break;
+        case 20:
+            cos_fi=-0.98;
+            break;
+        case 21:
+            cos_fi=-1.0;
+            break;
+        default:
+            
+            break;
+    }
+}    
+
+float corriente(){
+       
+    int16 suma = 0;
+    float muestras = 0;
+    float valor_adc_1 = 0;
+    float corriente = 0; 
+    disable_interrupts(global);
+    setup_adc(ADC_CLOCK_INTERNAL);
+    setUP_adc_ports(AN0_TO_AN1);
+  
+    float promedio = 0;
+    while (suma<=500){
+      set_adc_channel(0);
+       delay_us(20);
+       valor_adc_1 = read_adc();
+       corriente = valor_adc_1 * (0.7/1023.0);
+       muestras +=  (corriente*100.0);
+       suma++;
+    } 
+      
+      promedio = muestras/500;
+      //limpiar variables
+       suma = 0;
+       muestras = 0;
+       valor_adc_1 = 0;
+      corriente = 0; 
+      setup_adc (ADC_OFF);
+    
+    enable_interrupts(INT_EXT);
+    enable_interrupts(INT_EXT1);
+    enable_interrupts(GLOBAL);
+      return (promedio );     
+}
+
+
+float voltaje(){
+
+   unsigned int lectura_1,lectura_2;
+   unsigned int mayor= 0,mayor1 = 0;
+   const float res1=4700;
+   const float res2=1000;
+   float voltaje;
+   char cont;
+   set_adc_channel(1);
+  for (cont=0;cont<250;cont++)
+  {
+   lectura_1=read_adc(); //realiza primeralectura;
+   delay_us(10);
+   lectura_2=read_adc(); //realiza segundalectura;
+   delay_us(10);
+   if (lectura_2>lectura_1)  mayor=lectura_1;
+    else mayor=lectura_2;
+   if (mayor>mayor1) mayor1=mayor;
+   }
+   voltaje=mayor1*1.75/1023;          //calcula el voltaje
+
+   voltaje=voltaje*((res1+res2)/res2);  //aplica el divisor resistivo
+
+   voltaje=voltaje;              //suma caida en el puente rectificador
+   voltaje=(voltaje+1.4)/1.4142;   // saca RMS
+   return  voltaje;
+
+
+}

@@ -1,0 +1,159 @@
+
+ROM used:   13362/32768 (41%)
+            13362/32768 (41%) including unused fragments
+
+            1.4 Average locations per line
+            8.5 Average locations per statement
+
+RAM used:   507/2048 (25%) at main() level
+            586/2048 (29%) worst case
+
+Stack used: 17 worst case (8 in main + 9 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  221   100   6  vercion13.c
+  837     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Devices\18f4550.h
+  839   138   9  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\usb_cdc.h
+  228     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\pic18_usb.h
+  328     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\usb_hw_layer.h
+  303     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\usb_desc_cdc.h
+ 1103     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\usb.h
+ 1177   237  15  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\usb.c
+ 1406   317  20  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\pic18_usb.c
+  423   169  11  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+   32    44   3  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+   28   109   7  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+   72    38   2  medidas.h
+ 2229   257  16  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  456   100   6  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c
+  130    68   4  fusy.h
+----- -----
+ 9812  1577 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   0    1             @delay_ms1
+0     32   0    0             @const764
+0     32   0    0             @const767
+0     48   0    0             @const770
+0     48   0    0             @const773
+0     84   0    0             @const776
+0     18   0    0             @const779
+0     24   0    0             @const782
+0     34   0    0             @const787
+0     60   0    0             @const791
+0     34   0    5             @MUL1616
+0     86   0    4   139  4.3  usb_tbe
+0     34   0    0   136  2.2  usb_attach
+0     36   0    1   367  5.2  usb_task
+0    292   1    9  1092  5.4  usb_flush_in
+0    158   1   10   344  6.1  usb_put_packet
+0    266   1    9   914  5.0  usb_flush_out
+0     68   0    3    66  2.7  usb_rx_packet_size
+0    102   0    6   258  4.6  usb_stall_ep
+0    100   0    6   266  4.6  usb_unstall_ep
+0    118   0    5   373  6.0  usb_endpoint_stalled
+0     26   0    1    94  2.7  usb_set_address
+0    538   2   12  1774 10.4  usb_set_configured
+0    112   0    5   199  3.2  usb_disable_endpoint
+0     30   0    1    99  3.0  usb_disable_endpoints
+0      4   0    0    61  4.0  usb_clear_trn
+0    126   0    2   662  6.8  usb_isr
+0      6   0    0    43  2.0  usb_isr_sof
+0     42   0    0   357  4.2  usb_isr_rst
+0     32   0    0   508  4.0  usb_init_ep0_setup
+0      8   0    0    74  2.8  usb_isr_uerr
+0     10   0    0    82  2.8  usb_isr_uidle
+0     16   0    0   102  3.3  usb_isr_activity
+0     14   0    0   151  3.9  usb_isr_stall
+0      6   0    1    30  1.7  usb_request_send_response
+0      6   0    0    22  1.2  usb_request_get_data
+0      4   0    0    22  1.2  usb_request_stall
+0    248   1    2  3362  9.3  usb_isr_tok_dne
+0      8   0    0    29  1.9  usb_enumerated
+0     48   0    3   273  4.0  usb_token_reset
+0     98   0    3   274  5.9  usb_endpoint_is_valid
+0     50   0    1   212  3.1  usb_isr_tok_in_dne
+0     30   0    1   115  2.5  usb_isr_tok_out_dne
+0     50   0    0   375  6.4  usb_isr_tok_setup_dne
+0    188   1    0  1454  8.3  usb_isr_tkn_setup_StandardDevice
+0    172   1    3   933  7.7  usb_isr_tkn_setup_StandardInterface
+0    108   0    0   753  5.8  usb_isr_tkn_setup_StandardEndpoint
+0    230   1    1  1088  8.7  usb_Get_Descriptor
+0     14   0    0    76  1.8  usb_finish_set_address
+0    172   1    4   622  9.1  usb_copy_desc_seg_to_ep
+0     98   0    0   401  6.1  usb_isr_tok_out_cdc_control_dne
+0    174   1    0  1146  8.3  usb_isr_tkn_cdc
+0     28   0    0   174  3.6  usb_isr_tok_out_cdc_data_dne
+0      6   0    0    70  0.7  usb_isr_tok_in_cdc_data_dne
+0     38   0    0   106  2.9  usb_cdc_flush_tx_buffer
+0    124   0    4   280  2.3  usb_cdc_init
+0     18   0    0    59  2.3  usb_cdc_get_discard
+0     48   0    4   228  4.8  _usb_cdc_putc_fast_noflush
+0     26   0    1    52  2.0  usb_cdc_putc_fast
+0     18   0    1    80  3.1  usb_cdc_putc
+0    410   2   14   695  5.5  corriente
+0     54   0    2             @ITOF
+0    242   1   11             @MULFF
+0    634   2   16             @ADDFF
+0    350   1   14             @DIVFF
+0    446   2   13   834  7.4  voltaje
+0    166   1   10             @FLT
+0     56   0    4             @SFTOI
+0     82   0    3   760  4.5  lcd_read_byte
+0     82   0    2   262  3.7  lcd_read_nibble
+0     72   0    1   399  2.4  lcd_send_nibble
+0     70   0    3   415  3.7  lcd_send_byte
+0    128   0    6   852  6.2  lcd_init
+0     34   0    4   208  6.3  lcd_gotoxy
+0     80   0    1   354  4.7  lcd_putc
+0   1330   5   24  1820  8.8  difuso
+0    530   2   20   346  6.2  triang
+0    618   2   24   442  6.4  trapz
+0     76   0    8    76  4.0  fuzzyAND
+0     10   0    0    17  0.8  RB0_ISR
+0     94   0    4    42  1.7  RB1_ISR
+0   1008   4    1  1560  4.4  MAIN
+0     14   0    0             @const1386
+0     32   0    2             @PSTRINGC_1332
+0      2   0    0             @const1388
+0      8   0    0             @const1390
+0     32   0    3             @PSTRINGCN_1332
+0     62   0    5             @FTOSD
+0    142   1   13             @DIV3232
+0    386   1   13             @PRINTF_L32D_1332FPFPF
+0     18   0    0             @const1401
+0     36   0    0             @const1402
+0     30   0    3             @PSTRINGCN_657
+0    378   1   13             @PRINTF_L32D_657FPFPF
+0     10   0    0             @const1408
+0     12   0    0             @const1409
+0     12   0    0             @const1410
+0     92   0    9    83  2.5  get_indice
+0    198   1    9   183  5.3  roundDecimal
+0    470   2    0  1326  4.8  valores
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               68
+    Statements              1577
+    Comments                5871
+    Volume (V)              59657
+    Difficulty (D)          305.6
+    Effort to implement (E) 18234134
+    Time to implement (T)   281 hours, 23 minutes
+    Est Delivered Bugs (B)  23
+    Cyclomatic Complexity   175
+    Maintainability (MI)    133
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     4  0  
+00008-000AC   166  0  
+000AE-07FFE  13188  19406  
+
+
+

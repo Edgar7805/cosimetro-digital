@@ -1,0 +1,12 @@
+>>> Warning 203 "C:\Program Files (x86)\PICC\Drivers\pic18_usb.c" Line 643(1,1): Condition always TRUE
+>>> Warning 216 "vercion13.c" Line 218(1,2): Interrupts disabled during call to prevent re-entrancy:  (usb_token_reset)
+>>> Warning 216 "vercion13.c" Line 218(1,2): Interrupts disabled during call to prevent re-entrancy:  (@ITOF)
+>>> Warning 216 "vercion13.c" Line 218(1,2): Interrupts disabled during call to prevent re-entrancy:  (@DIVFF)
+>>> Warning 216 "vercion13.c" Line 218(1,2): Interrupts disabled during call to prevent re-entrancy:  (usb_cdc_flush_tx_buffer)
+>>> Warning 216 "vercion13.c" Line 218(1,2): Interrupts disabled during call to prevent re-entrancy:  (usb_cdc_init)
+>>> Warning 202 "vercion13.c" Line 26(6,12): Variable never used:   cambio
+>>> Warning 202 "vercion13.c" Line 37(6,11): Variable never used:   flag1
+>>> Warning 202 "vercion13.c" Line 80(13,14): Variable never used:   i
+      Memory usage:   ROM=41%      RAM=25% - 29%
+      0 Errors,  9 Warnings.
+Build Successful.
