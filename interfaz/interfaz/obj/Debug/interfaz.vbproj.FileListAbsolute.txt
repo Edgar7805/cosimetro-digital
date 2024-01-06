@@ -1,0 +1,63 @@
+C:\Users\Edgar\source\repos\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.AssemblyReference.cache
+C:\Users\Edgar\source\repos\Nueva carpeta\interfaz\obj\Debug\interfaz.Form1.resources
+C:\Users\Edgar\source\repos\Nueva carpeta\interfaz\obj\Debug\interfaz.Resources.resources
+C:\Users\Edgar\source\repos\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.GenerateResource.cache
+C:\Users\Edgar\source\repos\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.CoreCompileInputs.cache
+C:\Users\Edgar\source\repos\Nueva carpeta\interfaz\bin\Debug\interfaz.exe.config
+C:\Users\Edgar\source\repos\Nueva carpeta\interfaz\bin\Debug\interfaz.exe
+C:\Users\Edgar\source\repos\Nueva carpeta\interfaz\bin\Debug\interfaz.pdb
+C:\Users\Edgar\source\repos\Nueva carpeta\interfaz\bin\Debug\interfaz.xml
+C:\Users\Edgar\source\repos\Nueva carpeta\interfaz\obj\Debug\interfaz.exe
+C:\Users\Edgar\source\repos\Nueva carpeta\interfaz\obj\Debug\interfaz.xml
+C:\Users\Edgar\source\repos\Nueva carpeta\interfaz\obj\Debug\interfaz.pdb
+E:\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.AssemblyReference.cache
+E:\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.SuggestedBindingRedirects.cache
+E:\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.Form1.resources
+E:\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.Resources.resources
+E:\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.GenerateResource.cache
+E:\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.CoreCompileInputs.cache
+E:\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.exe
+E:\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.xml
+E:\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.pdb
+E:\interfaz bobinadora y demas\Nueva carpeta\interfaz\bin\Debug\interfaz.exe.config
+E:\interfaz bobinadora y demas\Nueva carpeta\interfaz\bin\Debug\interfaz.exe
+E:\interfaz bobinadora y demas\Nueva carpeta\interfaz\bin\Debug\interfaz.pdb
+E:\interfaz bobinadora y demas\Nueva carpeta\interfaz\bin\Debug\interfaz.xml
+C:\Users\matia\Desktop\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.AssemblyReference.cache
+C:\Users\matia\Desktop\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.SuggestedBindingRedirects.cache
+C:\Users\matia\Desktop\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.Form1.resources
+C:\Users\matia\Desktop\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.Resources.resources
+C:\Users\matia\Desktop\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.GenerateResource.cache
+C:\Users\matia\Desktop\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.CoreCompileInputs.cache
+C:\Users\matia\Desktop\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.exe
+C:\Users\matia\Desktop\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.xml
+C:\Users\matia\Desktop\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.pdb
+C:\Users\matia\Desktop\interfaz bobinadora y demas\Nueva carpeta\interfaz\bin\Debug\interfaz.exe.config
+C:\Users\matia\Desktop\interfaz bobinadora y demas\Nueva carpeta\interfaz\bin\Debug\interfaz.exe
+C:\Users\matia\Desktop\interfaz bobinadora y demas\Nueva carpeta\interfaz\bin\Debug\interfaz.pdb
+C:\Users\matia\Desktop\interfaz bobinadora y demas\Nueva carpeta\interfaz\bin\Debug\interfaz.xml
+C:\Users\matia\OneDrive\Escritorio\interfaz bobinadora y demas\Nueva carpeta\interfaz\bin\Debug\interfaz.exe.config
+C:\Users\matia\OneDrive\Escritorio\interfaz bobinadora y demas\Nueva carpeta\interfaz\bin\Debug\interfaz.exe
+C:\Users\matia\OneDrive\Escritorio\interfaz bobinadora y demas\Nueva carpeta\interfaz\bin\Debug\interfaz.pdb
+C:\Users\matia\OneDrive\Escritorio\interfaz bobinadora y demas\Nueva carpeta\interfaz\bin\Debug\interfaz.xml
+C:\Users\matia\OneDrive\Escritorio\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.AssemblyReference.cache
+C:\Users\matia\OneDrive\Escritorio\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.SuggestedBindingRedirects.cache
+C:\Users\matia\OneDrive\Escritorio\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.Form1.resources
+C:\Users\matia\OneDrive\Escritorio\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.Resources.resources
+C:\Users\matia\OneDrive\Escritorio\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.GenerateResource.cache
+C:\Users\matia\OneDrive\Escritorio\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.vbproj.CoreCompileInputs.cache
+C:\Users\matia\OneDrive\Escritorio\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.exe
+C:\Users\matia\OneDrive\Escritorio\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.xml
+C:\Users\matia\OneDrive\Escritorio\interfaz bobinadora y demas\Nueva carpeta\interfaz\obj\Debug\interfaz.pdb
+C:\Users\Edgar\Desktop\archivos Bobinadora\interfaz\obj\Debug\interfaz.vbproj.AssemblyReference.cache
+C:\Users\Edgar\Desktop\archivos Bobinadora\interfaz\obj\Debug\interfaz.Form1.resources
+C:\Users\Edgar\Desktop\archivos Bobinadora\interfaz\obj\Debug\interfaz.Resources.resources
+C:\Users\Edgar\Desktop\archivos Bobinadora\interfaz\obj\Debug\interfaz.vbproj.GenerateResource.cache
+C:\Users\Edgar\Desktop\archivos Bobinadora\interfaz\obj\Debug\interfaz.vbproj.CoreCompileInputs.cache
+C:\Users\Edgar\Desktop\archivos Bobinadora\interfaz\obj\Debug\interfaz.exe
+C:\Users\Edgar\Desktop\archivos Bobinadora\interfaz\obj\Debug\interfaz.xml
+C:\Users\Edgar\Desktop\archivos Bobinadora\interfaz\obj\Debug\interfaz.pdb
+C:\Users\Edgar\Desktop\archivos Bobinadora\interfaz\bin\Debug\interfaz.exe.config
+C:\Users\Edgar\Desktop\archivos Bobinadora\interfaz\bin\Debug\interfaz.exe
+C:\Users\Edgar\Desktop\archivos Bobinadora\interfaz\bin\Debug\interfaz.pdb
+C:\Users\Edgar\Desktop\archivos Bobinadora\interfaz\bin\Debug\interfaz.xml
